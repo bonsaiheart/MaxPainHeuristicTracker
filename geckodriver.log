@@ -1,0 +1,210 @@
+1666477456901	geckodriver	INFO	Listening on 127.0.0.1:54985
+1666477641888	geckodriver	INFO	Listening on 127.0.0.1:55862
+1666477976157	geckodriver	INFO	Listening on 127.0.0.1:50246
+1666477983137	geckodriver	INFO	Listening on 127.0.0.1:50265
+1666478152810	geckodriver	INFO	Listening on 127.0.0.1:50543
+1666478283606	geckodriver	INFO	Listening on 127.0.0.1:50685
+1666478528784	geckodriver	INFO	Listening on 127.0.0.1:50975
+1666478620586	geckodriver	INFO	Listening on 127.0.0.1:51076
+1666478626130	geckodriver	INFO	Listening on 127.0.0.1:51088
+1666620869364	geckodriver	INFO	Listening on 127.0.0.1:55554
+1666621008794	geckodriver	INFO	Listening on 127.0.0.1:55649
+1666621135251	geckodriver	INFO	Listening on 127.0.0.1:55759
+1666621313858	geckodriver	INFO	Listening on 127.0.0.1:55912
+1666621316872	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55913" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileO5MlVC"
+1666621317300	Marionette	INFO	Marionette enabled
+1666621317306	Marionette	INFO	Listening on port 55923
+Read port: 55923
+WebDriver BiDi listening on ws://127.0.0.1:55913
+1666621317457	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileO5MlVC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55913/devtools/browser/9040f62c-4cac-4a57-b894-a4f612c7246d
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 227 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666621648282	Marionette	INFO	Stopped listening on port 55923
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofileO5MlVC\protections.sqlite
+on port 56316
+Read port: 56316
+WebDriver BiDi listening on ws://127.0.0.1:56305
+1666621519571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilei7gchi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56305/devtools/browser/aa6f45c1-93fd-4b02-8671-e2b805a4a685
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 1245 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666621648535	Marionette	INFO	Stopped listening on port 56316
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilei7gchi\protections.sqlite
+bled
+1666621573170	Marionette	INFO	Listening on port 56475
+WebDriver BiDi listening on ws://127.0.0.1:56465
+Read port: 56475
+1666621573480	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilenJrn5i\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56465/devtools/browser/957573a0-1a48-4f90-89b4-72b8903ecef3
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 1401 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666621650392	Marionette	INFO	Stopped listening on port 56475
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+rofile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile5Y7neo"
+1666621599788	Marionette	INFO	Marionette enabled
+1666621599792	Marionette	INFO	Listening on port 56613
+Read port: 56613
+WebDriver BiDi listening on ws://127.0.0.1:56603
+1666621599892	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile5Y7neo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56603/devtools/browser/db56e686-9a11-4482-ae8d-bbba2e277439
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 454 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623148047	Marionette	INFO	Stopped listening on port 56613
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+t_mozprofileCKP3z0"
+1666621631724	Marionette	INFO	Marionette enabled
+1666621631729	Marionette	INFO	Listening on port 56769
+Read port: 56769
+WebDriver BiDi listening on ws://127.0.0.1:56757
+1666621631831	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileCKP3z0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56757/devtools/browser/18ac27c8-3dcb-42ff-bfdb-e69da9850490
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 4766 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623148707	Marionette	INFO	Stopped listening on port 56769
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+t_mozprofile86rFoH"
+1666621680546	Marionette	INFO	Marionette enabled
+1666621680551	Marionette	INFO	Listening on port 57126
+Read port: 57126
+WebDriver BiDi listening on ws://127.0.0.1:57114
+1666621680650	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile86rFoH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57114/devtools/browser/c7c3c27c-b6fc-4089-b033-f1f54332c961
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2825 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623149160	Marionette	INFO	Stopped listening on port 57126
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+t_mozprofilelAiJmo"
+1666621885540	Marionette	INFO	Marionette enabled
+1666621885545	Marionette	INFO	Listening on port 57354
+Read port: 57354
+WebDriver BiDi listening on ws://127.0.0.1:57342
+1666621885648	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilelAiJmo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57342/devtools/browser/231f72f5-ac6b-4bb3-b1e9-8e642027ad90
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 7414 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623150258	Marionette	INFO	Stopped listening on port 57354
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+t_mozprofilegXdBZN"
+1666621950574	Marionette	INFO	Marionette enabled
+1666621950579	Marionette	INFO	Listening on port 57688
+Read port: 57688
+WebDriver BiDi listening on ws://127.0.0.1:57677
+1666621950682	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilegXdBZN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57677/devtools/browser/6d7650c2-7851-489c-86c0-f24b411d601e
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2340 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623157298	Marionette	INFO	Stopped listening on port 57688
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilegXdBZN\protections.sqlite
+621978049	Marionette	INFO	Listening on port 58018
+Read port: 58018
+WebDriver BiDi listening on ws://127.0.0.1:58008
+1666621978150	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilezf5LNZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58008/devtools/browser/c88b8026-65b5-4648-bf25-9aa08eeceada
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 7277 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623157373	Marionette	INFO	Stopped listening on port 58018
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 719: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+23967	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileo1EwUh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58606/devtools/browser/0f4ed8aa-406d-42fd-8c3a-6e5dec3b8663
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2411 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623157137	Marionette	INFO	Stopped listening on port 58617
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+g-port" "59002" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile9ifZCc"
+1666622337684	Marionette	INFO	Marionette enabled
+1666622337689	Marionette	INFO	Listening on port 59013
+Read port: 59013
+WebDriver BiDi listening on ws://127.0.0.1:59002
+1666622337789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile9ifZCc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59002/devtools/browser/cf18ee83-50c5-42ee-ac46-c45422bdf46a
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 6541 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1666623157253	Marionette	INFO	Stopped listening on port 59013
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofile9ifZCc\protections.sqlite
+s\\del_p\\AppData\\Local\\Temp\\rust_mozprofileA0SfIm"
+1666622732945	Marionette	INFO	Marionette enabled
+1666622732950	Marionette	INFO	Listening on port 59649
+Read port: 59649
+WebDriver BiDi listening on ws://127.0.0.1:59628
+1666622733053	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileA0SfIm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59628/devtools/browser/65312663-9664-4610-9c3e-077feb8a3d8f
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2315 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666623157296	Marionette	INFO	Stopped listening on port 59649
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofileA0SfIm\protections.sqlite
+on port 59787
+Read port: 59787
+WebDriver BiDi listening on ws://127.0.0.1:59776
+1666622764644	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilebpKtAw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59776/devtools/browser/7108b1ef-e84d-4e0c-bda3-bbebb6c9e9db
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 662 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666623157374	Marionette	INFO	Stopped listening on port 59787
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileqDI0Iy"
+1666622823070	Marionette	INFO	Marionette enabled
+1666622823074	Marionette	INFO	Listening on port 60136
+Read port: 60136
+WebDriver BiDi listening on ws://127.0.0.1:60113
+1666622823177	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileqDI0Iy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60113/devtools/browser/e796495f-1c6c-4ad5-89c6-a023690f669c
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 2473 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666623157215	Marionette	INFO	Stopped listening on port 60136
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofileqDI0Iy\protections.sqlite
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+on port 60507
+Read port: 60507
+WebDriver BiDi listening on ws://127.0.0.1:60497
+1666622965665	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilecTb8zQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60497/devtools/browser/fcfa3415-0836-4006-ab86-7289abb75f7a
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 6121 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666623157076	Marionette	INFO	Stopped listening on port 60507
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+efox\\firefox.exe" "--marionette" "--remote-debugging-port" "60886" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileJxhegh"
+1666623039394	Marionette	INFO	Marionette enabled
+1666623039399	Marionette	INFO	Listening on port 60896
+Read port: 60896
+WebDriver BiDi listening on ws://127.0.0.1:60886
+1666623039503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileJxhegh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60886/devtools/browser/6fc76828-cb78-4f55-a43c-30188c69ff41
+JavaScript warning: https://pagead2.googlesyndication.com/bg/zmeOo8ONk1YqWYD8DpPjl7c0n4Y1CeYWRiKSJrvfmvk.js line 2 > eval line 5413 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666623157010	Marionette	INFO	Stopped listening on port 60896
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1671816729481	geckodriver	INFO	Listening on 127.0.0.1:56454
+1671816732490	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56455" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileuKkIcd"
+1671816732909	Marionette	INFO	Marionette enabled
+1671816732915	Marionette	INFO	Listening on port 56464
+WebDriver BiDi listening on ws://127.0.0.1:56455
+Read port: 56464
+1671816733174	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileuKkIcd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56455/devtools/browser/ab38d4a6-bb08-4066-9094-ca60543ffcc3
+JavaScript warning: https://pagead2.googlesyndication.com/bg/z7cUAtzL1u1d_2AGWF4wFgnTveRSMJLcB1xcawACHJQ.js line 2 > eval line 3261 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
