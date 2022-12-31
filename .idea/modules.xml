@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/StonksProjectAlpha.iml" filepath="$PROJECT_DIR$/.idea/StonksProjectAlpha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mp_timedelta_tracker.iml" filepath="$PROJECT_DIR$/.idea/mp_timedelta_tracker.iml" />
     </modules>
   </component>
 </project>

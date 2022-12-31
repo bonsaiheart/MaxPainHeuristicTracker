@@ -1,9 +1,12 @@
+import glob
+import os
 from pathlib import Path
 from datetime import datetime, timedelta
 import pandas as pd
 import yfinance as yf
 
-dailyCSVentries = Path('dataOutput/SPY-Daily -CSVs/*.csv')
+dailyCSVentries = glob.glob(r'dataOutput\SPY_Daily_CSVs\*.csv')
+
 data = []
 
 for csv in dailyCSVentries:
@@ -36,14 +39,10 @@ def getHistoryListStartWithOldest(symbol):
     global stockHistory
     a = listofmatchingdatesAsSTRINGS[0]
     ticker = yf.Ticker(symbol)
-    print(a)
     stockHistory = ticker.history(start=f"{a}", end=f"2030-12-12", interval="1d")
-    return stockHistory
+    for a in listofmatchingdatesAsSTRINGS:
+        stockHistory.at[f"{a}", 'Close']
 
-def get_openClose_forMatchingdates(a):
-    print(getHistoryListStartWithOldest("spy").at[f"{a}", 'Close'])
 
-for a in listofmatchingdatesAsSTRINGS:
-    get_openClose_forMatchingdates(a)
 
 bigframe.to_csv("dataoutput/maxpain.csv")
