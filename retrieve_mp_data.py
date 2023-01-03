@@ -1,13 +1,34 @@
 import csv
-from datetime import date
-from selenium import webdriver
+from datetime import date, timedelta
 import pandas as pd
+import chkMarketConditions
+from IPython.display import display
+import pandas_market_calendars as mcal
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-driver = webdriver.Firefox()
-# for trouble getting geckodriver working
-# driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+import webdriver_manager
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 
 
+## options = Options()
+## options.binary_location = r'C:\Program Files (x86)\Mozilla Firefox'
+## driver = webdriver.Firefox()
+## # for trouble getting geckodriver working
+## webdriver-
+## driver = webdriver.Firefox(service=(Gecko().install()))
+
+global error
+error = 0
+
+chkMrkt = chkMarketConditions.MarketCondition("george")
+chkMrkt.isMarketOpenToday()
+if chkMrkt.isMarketOpen == False:
+    print("Market Closed")
+    exit()
+
+driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
 driver.get('https://maximum-pain.com/options/SPY')
 element_dropdown = driver.find_element(By.TAG_NAME, "select")
 all_options = element_dropdown.find_elements(By.TAG_NAME, "option")
@@ -23,8 +44,8 @@ data_dict = {"maturitydate": dateGenerated}
 todayinweirdformat = date.today()
 today = pd.to_datetime(todayinweirdformat, infer_datetime_format='%m/%d/%y').strftime("%m-%d-%y")
 
-global error
-error = 0
+
+
 for option in all_options:
     option.click()
     #website posts as mm/dd/yyyy, need to convert so it parses correctly when concatenated in pandas later.
@@ -43,11 +64,12 @@ for option in all_options:
         data_dict = ""
         today = f"Timeout Error {today}"
         error = 1
-
+driver.close()
 print(data_dict)
 if error == 0:
-    with open(f"dataOutput/SPY-Daily -CSVs/{today} SPY MaxPain.csv", 'w') as file:
+    with open(f"dataOutput/SPY_Daily_CSVs/{today} SPY MaxPain.csv", 'w') as file:
         writer = csv.DictWriter(file, data_dict.keys())
         writer.writeheader()
         writer.writerow(data_dict)
+
 
