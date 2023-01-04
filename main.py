@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import retrieve_mp_data
 
 
-
+retrieve_mp_data
 
 dailyCSVentries = glob.glob(r'dataOutput\SPY_Daily_CSVs\*.csv')
 

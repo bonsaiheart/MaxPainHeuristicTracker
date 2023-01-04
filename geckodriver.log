@@ -3241,3 +3241,15 @@ DevTools listening on ws://127.0.0.1:50611/devtools/browser/ddc835dd-ce01-412d-8
 JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 2888 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1672870947230	Marionette	INFO	Stopped listening on port 50621
 JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilerbUetq\protections.sqlite
+1672871312665	geckodriver	INFO	Listening on 127.0.0.1:50849
+1672871315675	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50850" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilefY7EKt"
+1672871316042	Marionette	INFO	Marionette enabled
+1672871316047	Marionette	INFO	Listening on port 50860
+Read port: 50860
+WebDriver BiDi listening on ws://127.0.0.1:50850
+1672871316154	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilefY7EKt\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50850/devtools/browser/960da126-e628-4fba-84a7-f1be8df889fb
+JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 4856 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1672871363001	Marionette	INFO	Stopped listening on port 50860
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilefY7EKt\protections.sqlite
