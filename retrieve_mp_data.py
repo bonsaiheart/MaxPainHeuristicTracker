@@ -57,18 +57,17 @@ for option in all_options:
     if maturitydate != repeat_date_check_list[-1]:
         maxpainstring = (driver.find_element(By.XPATH,  "/html/body/app-root/div/div[1]/div/app-options/div/div[10]/div/app-maxpain/table/caption/b[2]").get_attribute("innerHTML")).removeprefix("Max Pain $")
         maxpain = '{:,.2f}'.format(float(maxpainstring))
-        print(maxpain)
         data_list.append(maxpain)
         data_dict[maturitydate] = maxpain
         repeat_date_check_list.append(maturitydate)
-        print(maxpain)
     else:
         print("Error: Webdriver has timed out.")
         data_dict = ""
         today = f"Timeout Error {today}"
         error = 1
+
 driver.close()
-print(data_dict)
+
 if error == 0:
     with open(f"dataOutput/SPY_Daily_CSVs/{todayasYYMMDD} SPY MaxPain.csv", 'w') as file:
         writer = csv.DictWriter(file, data_dict.keys())

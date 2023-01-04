@@ -51,11 +51,11 @@ for a in listofmatchingdates_backslash:
 bigframe.to_csv("dataoutput/maxpain.csv")
 
 bigframe = bigframe.astype(float)
-bigframe.info()
+
 chart1 = bigframe.plot(alpha=.3, loglog=False, lw=3, colormap='prism', marker='.', linestyle="dotted", markersize=10, title='SPY Heuristic staggered MaxPain')
 chart1.set_xlabel("Exp. Date")
 chart1.set_ylabel("Price $$$")
-print(bigframe.index)
+
 
 plt.legend(title="Date Gen.")
 plt.show()

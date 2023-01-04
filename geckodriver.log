@@ -3253,3 +3253,54 @@ DevTools listening on ws://127.0.0.1:50850/devtools/browser/960da126-e628-4fba-8
 JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 4856 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1672871363001	Marionette	INFO	Stopped listening on port 50860
 JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilefY7EKt\protections.sqlite
+1672871870381	geckodriver	INFO	Listening on 127.0.0.1:51342
+1672871873392	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51343" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileeccW1o"
+1672871873758	Marionette	INFO	Marionette enabled
+1672871873762	Marionette	INFO	Listening on port 51353
+Read port: 51353
+WebDriver BiDi listening on ws://127.0.0.1:51343
+1672871873865	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileeccW1o\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51343/devtools/browser/010ba50a-ed35-4a1d-9082-2df9576548be
+JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 6904 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1672871891376	Marionette	INFO	Stopped listening on port 51353
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1672872069566	geckodriver	INFO	Listening on 127.0.0.1:51540
+1672872072575	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51541" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileHzoRUb"
+1672872072932	Marionette	INFO	Marionette enabled
+1672872072937	Marionette	INFO	Listening on port 51551
+Read port: 51551
+WebDriver BiDi listening on ws://127.0.0.1:51541
+1672872073035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileHzoRUb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51541/devtools/browser/1d9b2808-834a-4c6d-bb7c-d9e75ea13d37
+JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 6372 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1672872087955	Marionette	INFO	Stopped listening on port 51551
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofileHzoRUb\protections.sqlite
+1672872226881	geckodriver	INFO	Listening on 127.0.0.1:51681
+1672872229891	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51682" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilelbmKUV"
+1672872230252	Marionette	INFO	Marionette enabled
+1672872230256	Marionette	INFO	Listening on port 51692
+Read port: 51692
+WebDriver BiDi listening on ws://127.0.0.1:51682
+1672872230357	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilelbmKUV\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51682/devtools/browser/8b89b067-dac9-4310-be6a-bbe879c11f99
+JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 3196 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1672872243498	Marionette	INFO	Stopped listening on port 51692
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilelbmKUV\protections.sqlite
+[Parent 7580, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:746
+1672872289504	geckodriver	INFO	Listening on 127.0.0.1:51788
+1672872292518	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51789" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileT1Ypkl"
+1672872292863	Marionette	INFO	Marionette enabled
+1672872292867	Marionette	INFO	Listening on port 51799
+Read port: 51799
+WebDriver BiDi listening on ws://127.0.0.1:51789
+1672872292986	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileT1Ypkl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51789/devtools/browser/19a16300-e8aa-432c-965d-7c6ad563854d
+1672872297809	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 7494 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1672872306573	Marionette	INFO	Stopped listening on port 51799
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofileT1Ypkl\protections.sqlite
