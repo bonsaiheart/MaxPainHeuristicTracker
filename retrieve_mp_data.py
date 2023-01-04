@@ -23,7 +23,7 @@ global error
 error = 0
 
 chkMrkt = chkMarketConditions.MarketCondition("george")
-chkMrkt.isMarketOpenToday()
+chkMrkt.is_market_open_today()
 if chkMrkt.isMarketOpen == False:
     print("Market Closed")
     exit()
