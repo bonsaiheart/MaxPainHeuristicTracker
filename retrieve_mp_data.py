@@ -1,13 +1,9 @@
 import csv
-from datetime import date, timedelta
+from datetime import date
 import pandas as pd
 import chkMarketConditions
-from IPython.display import display
-import pandas_market_calendars as mcal
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-import webdriver_manager
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
