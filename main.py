@@ -5,10 +5,10 @@ import operations
 import matplotlib.pyplot as plt
 import retrieve_mp_data
 
+ticker = "roku"
+retrieve_mp_data.GetMaxPainData(f"{ticker}")
 
-retrieve_mp_data
-
-dailyCSVentries = glob.glob(r'dataOutput\SPY_Daily_CSVs\*.csv')
+dailyCSVentries = glob.glob(f'dataOutput\\{ticker}_Daily_CSVs\\*.csv')
 
 data = []
 
@@ -48,11 +48,11 @@ for a in listofmatchingdates_backslash:
     columnvalue = (bigframe.index.get_loc(b))
     bigframe.iat[columnvalue, indexvalue] = closingprice
 
-bigframe.to_csv("dataoutput/maxpain.csv")
+bigframe.to_csv(f"dataoutput/{ticker.upper()}maxpain.csv")
 
 bigframe = bigframe.astype(float)
 
-chart1 = bigframe.plot(alpha=.3, loglog=False, lw=3, colormap='prism', marker='.', linestyle="dotted", markersize=10, title='SPY Heuristic staggered MaxPain')
+chart1 = bigframe.plot(alpha=.3, loglog=False, lw=3, colormap='prism', marker='.', linestyle="dotted", markersize=10, title=f'{ticker} Heuristic staggered MaxPain')
 chart1.set_xlabel("Exp. Date")
 chart1.set_ylabel("Price $$$")
 

@@ -3314,8 +3314,9 @@ WebDriver BiDi listening on ws://127.0.0.1:54167
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileNxl9Ff\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:54167/devtools/browser/907b6ef3-ea18-4c64-bf23-7e9aa8604d91
 JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 7717 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1672924648834	geckodriver	INFO	Listening on 127.0.0.1:54296
-1672924651847	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54297" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile7iGKxs"
+1672955573949	Marionette	INFO	Stopped listening on port 54178
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+e" "--remote-debugging-port" "54297" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile7iGKxs"
 1672924652233	Marionette	INFO	Marionette enabled
 1672924652238	Marionette	INFO	Listening on port 54307
 Read port: 54307
@@ -3333,7 +3334,9 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 2695 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 1623 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript warning: https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.en_US.AGvCHSkJQ78.es5.O/ck=boq-search.VisualFrontendUi.T0kxXmiDgNk.L.F4.O/am=ADpwH0EMAFC__h8hCOS7CAAEDyBAEAAqAEvhAAATAADoCQBVTAoIkAVglQAiACexKQMAAOyCZmMgBAAYBkAAAAAAABTeecBAAAAAAAAAAAAAwogBAAAAAAAAIABoEgAAAAAAAQ/d=1/exm=LEikZe,_b,_r,_tp,byfTOb,lsjVmc/excm=_b,_r,_tp,unifiedviewerview/ed=1/wt=2/rs=AH7-fg6YzqKPsEd6WK0Mf3b748L0kl849Q/ee=cEt90b:ws9Tlc;QGR0gd:Mlhmy;uY49fb:COQbmf;yxTchf:KUM7Z;qddgKe:xQtZb;dIoSBb:SpsfSb;EmZ2Bf:zr1jrb;EVNhjf:pw70Gc;NSEoX:lazG7b;qaS3gd:yiLg6e;zOsCQe:Ko78Df;sTsDMc:kHVSUb;KcokUb:KiuZBf;WCEKNd:I46Hvd;xMUn6e:e0kzxe;fWLTFc:TVBJbf;flqRgb:ox2Q7c;pXdRYb:oR20R;oGtAuc:sOXFj;rQSrae:C6D5Fc;kCQyJ:ueyPK;EABSZ:MXZt9d;qavrXe:zQzcXe;TxfV6d:YORN0b;dtl0hd:lLQWFe;UDrY1c:eps46d;wQlYve:aLUfP;GleZL:J1A7Od;g8nkx:U4MzKc;JXS8fb:Qj0suc;w3bZCb:ZPGaIb;VGRfx:VFqbr;aAJE9c:WHW6Ef;imqimf:jKGL2e;BgS6mb:fidj5d;z97YGf:oug9te;CxXAWb:YyRLvc;Pguwyb:Xm4ZCd;VN6jIc:ddQyuf;F9mqte:UoRcbe;SLtqO:Kh1xYe;tosKvd:ZCqP3;WDGyFe:jcVOxd;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;bcPXSc:gSZLJb;aZ61od:arTwJ;cFTWae:gT8qnd;gaub4:TN6bMe;DpcR3d:zL72xf;hjRo6e:F62sG;BjwMce:cXX2Wb;Pjplud:EEDORb;io8t5d:yDVVkb;j7137d:KG2eXe;Oj465e:KG2eXe;ul9GGd:VDovNc;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;NPKaK:SdcwHb;nAFL3:s39S4;iFQyKf:QIhFr;zxnPse:SP0dJe;tGdRVe:oRqHk;yWysfe:pjcr8d;F774Sb:sVEevc;eBAeSb:sVEevc;VoYp5d:BXWsfc;xqxLcb:Whqy4b;Ti4hX:Y1W8Ad;vGrMZ:Y1W8Ad;h3MYod:wV5Pjc;zaIgPb:ovuoid;kbAm9d:MkHyGd;okUaUd:Kg1rBc;tH4IIe:NoECLb;wV5Pjc:nQze3d;eHDfl:ofjVkb;SNUn3:ZwDk9d;LBgRLc:SdcwHb;wR5FRb:O1Gjze;vfVwPd:TWOpEe;w9w86d:aIe7ef;KQzWid:mB4wNe;pNsl2d:j9Yuyc;Nyt6ic:jn2sGd/m=ws9Tlc,n73qwf,IZT63,UUJqVe,O1Gjze,xUdipf,OTA3Ae,COQbmf,fKUV3e,aurFic,U0aPgd,ZwDk9d,V3dDOb,mI3LFb,xhIfAc,BXWsfc,I46Hvd,HU2IR,S1avQ,WO9ee,btdpvd,O6y8ed,PrPYRd,MpJwZc,NwH0H,OmgaI,lazG7b,XVMNvd,KUM7Z,Mlhmy,L1AAkb,aIe7ef,s39S4,lwddkf,gychg,w9hDv,EEDORb,RMhBfe,Wq6lxf,nQze3d,fkGYQb,SdcwHb,S2r5lb,aW3pY,pw70Gc,EFQ78c,Ulmmrd,ZfAoz,mdR7q,Rr5NOe,oR20R,xQtZb,Wf0Cmd,JNoxi,kWgXee,MI6k7c,kjKdXe,SRsBqc,G2GqHe,BVgquf,QIhFr,ovKuLd,hKSk3e,Ko78Df,yDVVkb,hc6Ubd,Kg1rBc,SpsfSb,KG2eXe,sVEevc,zbML3c,VwDzFe,GihOkd,fM7wyf,zr1jrb,ClUoee,A7fCU,Uas9Hd,pjICDe, line 4816: Script terminated by timeout at:
+JavaScript warning: https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.V1672955571196	Marionette	INFO	Stopped listening on port 54523
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+BTeecBAAAAAAAAAAAAAwogBAAAAAAAAIABoEgAAAAAAAQ/d=1/exm=LEikZe,_b,_r,_tp,byfTOb,lsjVmc/excm=_b,_r,_tp,unifiedviewerview/ed=1/wt=2/rs=AH7-fg6YzqKPsEd6WK0Mf3b748L0kl849Q/ee=cEt90b:ws9Tlc;QGR0gd:Mlhmy;uY49fb:COQbmf;yxTchf:KUM7Z;qddgKe:xQtZb;dIoSBb:SpsfSb;EmZ2Bf:zr1jrb;EVNhjf:pw70Gc;NSEoX:lazG7b;qaS3gd:yiLg6e;zOsCQe:Ko78Df;sTsDMc:kHVSUb;KcokUb:KiuZBf;WCEKNd:I46Hvd;xMUn6e:e0kzxe;fWLTFc:TVBJbf;flqRgb:ox2Q7c;pXdRYb:oR20R;oGtAuc:sOXFj;rQSrae:C6D5Fc;kCQyJ:ueyPK;EABSZ:MXZt9d;qavrXe:zQzcXe;TxfV6d:YORN0b;dtl0hd:lLQWFe;UDrY1c:eps46d;wQlYve:aLUfP;GleZL:J1A7Od;g8nkx:U4MzKc;JXS8fb:Qj0suc;w3bZCb:ZPGaIb;VGRfx:VFqbr;aAJE9c:WHW6Ef;imqimf:jKGL2e;BgS6mb:fidj5d;z97YGf:oug9te;CxXAWb:YyRLvc;Pguwyb:Xm4ZCd;VN6jIc:ddQyuf;F9mqte:UoRcbe;SLtqO:Kh1xYe;tosKvd:ZCqP3;WDGyFe:jcVOxd;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;bcPXSc:gSZLJb;aZ61od:arTwJ;cFTWae:gT8qnd;gaub4:TN6bMe;DpcR3d:zL72xf;hjRo6e:F62sG;BjwMce:cXX2Wb;Pjplud:EEDORb;io8t5d:yDVVkb;j7137d:KG2eXe;Oj465e:KG2eXe;ul9GGd:VDovNc;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;NPKaK:SdcwHb;nAFL3:s39S4;iFQyKf:QIhFr;zxnPse:SP0dJe;tGdRVe:oRqHk;yWysfe:pjcr8d;F774Sb:sVEevc;eBAeSb:sVEevc;VoYp5d:BXWsfc;xqxLcb:Whqy4b;Ti4hX:Y1W8Ad;vGrMZ:Y1W8Ad;h3MYod:wV5Pjc;zaIgPb:ovuoid;kbAm9d:MkHyGd;okUaUd:Kg1rBc;tH4IIe:NoECLb;wV5Pjc:nQze3d;eHDfl:ofjVkb;SNUn3:ZwDk9d;LBgRLc:SdcwHb;wR5FRb:O1Gjze;vfVwPd:TWOpEe;w9w86d:aIe7ef;KQzWid:mB4wNe;pNsl2d:j9Yuyc;Nyt6ic:jn2sGd/m=ws9Tlc,n73qwf,IZT63,UUJqVe,O1Gjze,xUdipf,OTA3Ae,COQbmf,fKUV3e,aurFic,U0aPgd,ZwDk9d,V3dDOb,mI3LFb,xhIfAc,BXWsfc,I46Hvd,HU2IR,S1avQ,WO9ee,btdpvd,O6y8ed,PrPYRd,MpJwZc,NwH0H,OmgaI,lazG7b,XVMNvd,KUM7Z,Mlhmy,L1AAkb,aIe7ef,s39S4,lwddkf,gychg,w9hDv,EEDORb,RMhBfe,Wq6lxf,nQze3d,fkGYQb,SdcwHb,S2r5lb,aW3pY,pw70Gc,EFQ78c,Ulmmrd,ZfAoz,mdR7q,Rr5NOe,oR20R,xQtZb,Wf0Cmd,JNoxi,kWgXee,MI6k7c,kjKdXe,SRsBqc,G2GqHe,BVgquf,QIhFr,ovKuLd,hKSk3e,Ko78Df,yDVVkb,hc6Ubd,Kg1rBc,SpsfSb,KG2eXe,sVEevc,zbML3c,VwDzFe,GihOkd,fM7wyf,zr1jrb,ClUoee,A7fCU,Uas9Hd,pjICDe, line 4816: Script terminated by timeout at:
 qVe/this.O</b.H@https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.en_US.AGvCHSkJQ78.es5.O/ck=boq-search.VisualFrontendUi.T0kxXmiDgNk.L.F4.O/am=ADpwH0EMAFC__h8hCOS7CAAEDyBAEAAqAEvhAAATAADoCQBVTAoIkAVglQAiACexKQMAAOyCZmMgBAAYBkAAAAAAABTeecBAAAAAAAAAAAAAwogBAAAAAAAAIABoEgAAAAAAAQ/d=1/exm=LEikZe,_b,_r,_tp,byfTOb,lsjVmc/excm=_b,_r,_tp,unifiedviewerview/ed=1/wt=2/rs=AH7-fg6YzqKPsEd6WK0Mf3b748L0kl849Q/ee=cEt90b:ws9Tlc;QGR0gd:Mlhmy;uY49fb:COQbmf;yxTchf:KUM7Z;qddgKe:xQtZb;dIoSBb:SpsfSb;EmZ2Bf:zr1jrb;EVNhjf:pw70Gc;NSEoX:lazG7b;qaS3gd:yiLg6e;zOsCQe:Ko78Df;sTsDMc:kHVSUb;KcokUb:KiuZBf;WCEKNd:I46Hvd;xMUn6e:e0kzxe;fWLTFc:TVBJbf;flqRgb:ox2Q7c;pXdRYb:oR20R;oGtAuc:sOXFj;rQSrae:C6D5Fc;kCQyJ:ueyPK;EABSZ:MXZt9d;qavrXe:zQzcXe;TxfV6d:YORN0b;dtl0hd:lLQWFe;UDrY1c:eps46d;wQlYve:aLUfP;GleZL:J1A7Od;g8nkx:U4MzKc;JXS8fb:Qj0suc;w3bZCb:ZPGaIb;VGRfx:VFqbr;aAJE9c:WHW6Ef;imqimf:jKGL2e;BgS6mb:fidj5d;z97YGf:oug9te;CxXAWb:YyRLvc;Pguwyb:Xm4ZCd;VN6jIc:ddQyuf;F9mqte:UoRcbe;SLtqO:Kh1xYe;tosKvd:ZCqP3;WDGyFe:jcVOxd;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;bcPXSc:gSZLJb;aZ61od:arTwJ;cFTWae:gT8qnd;gaub4:TN6bMe;DpcR3d:zL72xf;hjRo6e:F62sG;BjwMce:cXX2Wb;Pjplud:EEDORb;io8t5d:yDVVkb;j7137d:KG2eXe;Oj465e:KG2eXe;ul9GGd:VDovNc;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;NPKaK:SdcwHb;nAFL3:s39S4;iFQyKf:QIhFr;zxnPse:SP0dJe;tGdRVe:oRqHk;yWysfe:pjcr8d;F774Sb:sVEevc;eBAeSb:sVEevc;VoYp5d:BXWsfc;xqxLcb:Whqy4b;Ti4hX:Y1W8Ad;vGrMZ:Y1W8Ad;h3MYod:wV5Pjc;zaIgPb:ovuoid;kbAm9d:MkHyGd;okUaUd:Kg1rBc;tH4IIe:NoECLb;wV5Pjc:nQze3d;eHDfl:ofjVkb;SNUn3:ZwDk9d;LBgRLc:SdcwHb;wR5FRb:O1Gjze;vfVwPd:TWOpEe;w9w86d:aIe7ef;KQzWid:mB4wNe;pNsl2d:j9Yuyc;Nyt6ic:jn2sGd/m=ws9Tlc,n73qwf,IZT63,UUJqVe,O1Gjze,xUdipf,OTA3Ae,COQbmf,fKUV3e,aurFic,U0aPgd,ZwDk9d,V3dDOb,mI3LFb,xhIfAc,BXWsfc,I46Hvd,HU2IR,S1avQ,WO9ee,btdpvd,O6y8ed,PrPYRd,MpJwZc,NwH0H,OmgaI,lazG7b,XVMNvd,KUM7Z,Mlhmy,L1AAkb,aIe7ef,s39S4,lwddkf,gychg,w9hDv,EEDORb,RMhBfe,Wq6lxf,nQze3d,fkGYQb,SdcwHb,S2r5lb,aW3pY,pw70Gc,EFQ78c,Ulmmrd,ZfAoz,mdR7q,Rr5NOe,oR20R,xQtZb,Wf0Cmd,JNoxi,kWgXee,MI6k7c,kjKdXe,SRsBqc,G2GqHe,BVgquf,QIhFr,ovKuLd,hKSk3e,Ko78Df,yDVVkb,hc6Ubd,Kg1rBc,SpsfSb,KG2eXe,sVEevc,zbML3c,VwDzFe,GihOkd,fM7wyf,zr1jrb,ClUoee,A7fCU,Uas9Hd,pjICDe:4816:206
 oVe@https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.en_US.AGvCHSkJQ78.es5.O/ck=boq-search.VisualFrontendUi.T0kxXmiDgNk.L.F4.O/am=ADpwH0EMAFC__h8hCOS7CAAEDyBAEAAqAEvhAAATAADoCQBVTAoIkAVglQAiACexKQMAAOyCZmMgBAAYBkAAAAAAABTeecBAAAAAAAAAAAAAwogBAAAAAAAAIABoEgAAAAAAAQ/d=1/exm=LEikZe,_b,_r,_tp,byfTOb,lsjVmc/excm=_b,_r,_tp,unifiedviewerview/ed=1/wt=2/rs=AH7-fg6YzqKPsEd6WK0Mf3b748L0kl849Q/ee=cEt90b:ws9Tlc;QGR0gd:Mlhmy;uY49fb:COQbmf;yxTchf:KUM7Z;qddgKe:xQtZb;dIoSBb:SpsfSb;EmZ2Bf:zr1jrb;EVNhjf:pw70Gc;NSEoX:lazG7b;qaS3gd:yiLg6e;zOsCQe:Ko78Df;sTsDMc:kHVSUb;KcokUb:KiuZBf;WCEKNd:I46Hvd;xMUn6e:e0kzxe;fWLTFc:TVBJbf;flqRgb:ox2Q7c;pXdRYb:oR20R;oGtAuc:sOXFj;rQSrae:C6D5Fc;kCQyJ:ueyPK;EABSZ:MXZt9d;qavrXe:zQzcXe;TxfV6d:YORN0b;dtl0hd:lLQWFe;UDrY1c:eps46d;wQlYve:aLUfP;GleZL:J1A7Od;g8nkx:U4MzKc;JXS8fb:Qj0suc;w3bZCb:ZPGaIb;VGRfx:VFqbr;aAJE9c:WHW6Ef;imqimf:jKGL2e;BgS6mb:fidj5d;z97YGf:oug9te;CxXAWb:YyRLvc;Pguwyb:Xm4ZCd;VN6jIc:ddQyuf;F9mqte:UoRcbe;SLtqO:Kh1xYe;tosKvd:ZCqP3;WDGyFe:jcVOxd;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;bcPXSc:gSZLJb;aZ61od:arTwJ;cFTWae:gT8qnd;gaub4:TN6bMe;DpcR3d:zL72xf;hjRo6e:F62sG;BjwMce:cXX2Wb;Pjplud:EEDORb;io8t5d:yDVVkb;j7137d:KG2eXe;Oj465e:KG2eXe;ul9GGd:VDovNc;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;NPKaK:SdcwHb;nAFL3:s39S4;iFQyKf:QIhFr;zxnPse:SP0dJe;tGdRVe:oRqHk;yWysfe:pjcr8d;F774Sb:sVEevc;eBAeSb:sVEevc;VoYp5d:BXWsfc;xqxLcb:Whqy4b;Ti4hX:Y1W8Ad;vGrMZ:Y1W8Ad;h3MYod:wV5Pjc;zaIgPb:ovuoid;kbAm9d:MkHyGd;okUaUd:Kg1rBc;tH4IIe:NoECLb;wV5Pjc:nQze3d;eHDfl:ofjVkb;SNUn3:ZwDk9d;LBgRLc:SdcwHb;wR5FRb:O1Gjze;vfVwPd:TWOpEe;w9w86d:aIe7ef;KQzWid:mB4wNe;pNsl2d:j9Yuyc;Nyt6ic:jn2sGd/m=ws9Tlc,n73qwf,IZT63,UUJqVe,O1Gjze,xUdipf,OTA3Ae,COQbmf,fKUV3e,aurFic,U0aPgd,ZwDk9d,V3dDOb,mI3LFb,xhIfAc,BXWsfc,I46Hvd,HU2IR,S1avQ,WO9ee,btdpvd,O6y8ed,PrPYRd,MpJwZc,NwH0H,OmgaI,lazG7b,XVMNvd,KUM7Z,Mlhmy,L1AAkb,aIe7ef,s39S4,lwddkf,gychg,w9hDv,EEDORb,RMhBfe,Wq6lxf,nQze3d,fkGYQb,SdcwHb,S2r5lb,aW3pY,pw70Gc,EFQ78c,Ulmmrd,ZfAoz,mdR7q,Rr5NOe,oR20R,xQtZb,Wf0Cmd,JNoxi,kWgXee,MI6k7c,kjKdXe,SRsBqc,G2GqHe,BVgquf,QIhFr,ovKuLd,hKSk3e,Ko78Df,yDVVkb,hc6Ubd,Kg1rBc,SpsfSb,KG2eXe,sVEevc,zbML3c,VwDzFe,GihOkd,fM7wyf,zr1jrb,ClUoee,A7fCU,Uas9Hd,pjICDe:4820:385
 qVe/this.ma@https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.en_US.AGvCHSkJQ78.es5.O/ck=boq-search.VisualFrontendUi.T0kxXmiDgNk.L.F4.O/am=ADpwH0EMAFC__h8hCOS7CAAEDyBAEAAqAEvhAAATAADoCQBVTAoIkAVglQAiACexKQMAAOyCZmMgBAAYBkAAAAAAABTeecBAAAAAAAAAAAAAwogBAAAAAAAAIABoEgAAAAAAAQ/d=1/exm=LEikZe,_b,_r,_tp,byfTOb,lsjVmc/excm=_b,_r,_tp,unifiedviewerview/ed=1/wt=2/rs=AH7-fg6YzqKPsEd6WK0Mf3b748L0kl849Q/ee=cEt90b:ws9Tlc;QGR0gd:Mlhmy;uY49fb:COQbmf;yxTchf:KUM7Z;qddgKe:xQtZb;dIoSBb:SpsfSb;EmZ2Bf:zr1jrb;EVNhjf:pw70Gc;NSEoX:lazG7b;qaS3gd:yiLg6e;zOsCQe:Ko78Df;sTsDMc:kHVSUb;KcokUb:KiuZBf;WCEKNd:I46Hvd;xMUn6e:e0kzxe;fWLTFc:TVBJbf;flqRgb:ox2Q7c;pXdRYb:oR20R;oGtAuc:sOXFj;rQSrae:C6D5Fc;kCQyJ:ueyPK;EABSZ:MXZt9d;qavrXe:zQzcXe;TxfV6d:YORN0b;dtl0hd:lLQWFe;UDrY1c:eps46d;wQlYve:aLUfP;GleZL:J1A7Od;g8nkx:U4MzKc;JXS8fb:Qj0suc;w3bZCb:ZPGaIb;VGRfx:VFqbr;aAJE9c:WHW6Ef;imqimf:jKGL2e;BgS6mb:fidj5d;z97YGf:oug9te;CxXAWb:YyRLvc;Pguwyb:Xm4ZCd;VN6jIc:ddQyuf;F9mqte:UoRcbe;SLtqO:Kh1xYe;tosKvd:ZCqP3;WDGyFe:jcVOxd;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;bcPXSc:gSZLJb;aZ61od:arTwJ;cFTWae:gT8qnd;gaub4:TN6bMe;DpcR3d:zL72xf;hjRo6e:F62sG;BjwMce:cXX2Wb;Pjplud:EEDORb;io8t5d:yDVVkb;j7137d:KG2eXe;Oj465e:KG2eXe;ul9GGd:VDovNc;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;NPKaK:SdcwHb;nAFL3:s39S4;iFQyKf:QIhFr;zxnPse:SP0dJe;tGdRVe:oRqHk;yWysfe:pjcr8d;F774Sb:sVEevc;eBAeSb:sVEevc;VoYp5d:BXWsfc;xqxLcb:Whqy4b;Ti4hX:Y1W8Ad;vGrMZ:Y1W8Ad;h3MYod:wV5Pjc;zaIgPb:ovuoid;kbAm9d:MkHyGd;okUaUd:Kg1rBc;tH4IIe:NoECLb;wV5Pjc:nQze3d;eHDfl:ofjVkb;SNUn3:ZwDk9d;LBgRLc:SdcwHb;wR5FRb:O1Gjze;vfVwPd:TWOpEe;w9w86d:aIe7ef;KQzWid:mB4wNe;pNsl2d:j9Yuyc;Nyt6ic:jn2sGd/m=ws9Tlc,n73qwf,IZT63,UUJqVe,O1Gjze,xUdipf,OTA3Ae,COQbmf,fKUV3e,aurFic,U0aPgd,ZwDk9d,V3dDOb,mI3LFb,xhIfAc,BXWsfc,I46Hvd,HU2IR,S1avQ,WO9ee,btdpvd,O6y8ed,PrPYRd,MpJwZc,NwH0H,OmgaI,lazG7b,XVMNvd,KUM7Z,Mlhmy,L1AAkb,aIe7ef,s39S4,lwddkf,gychg,w9hDv,EEDORb,RMhBfe,Wq6lxf,nQze3d,fkGYQb,SdcwHb,S2r5lb,aW3pY,pw70Gc,EFQ78c,Ulmmrd,ZfAoz,mdR7q,Rr5NOe,oR20R,xQtZb,Wf0Cmd,JNoxi,kWgXee,MI6k7c,kjKdXe,SRsBqc,G2GqHe,BVgquf,QIhFr,ovKuLd,hKSk3e,Ko78Df,yDVVkb,hc6Ubd,Kg1rBc,SpsfSb,KG2eXe,sVEevc,zbML3c,VwDzFe,GihOkd,fM7wyf,zr1jrb,ClUoee,A7fCU,Uas9Hd,pjICDe:4816:248
@@ -3341,3 +3344,166 @@ qVe/this.ma@https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFro
 JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 3934 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 5275 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1672955580531	Marionette	INFO	Stopped listening on port 54307
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1672955580583	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 51"  data: no] Stack trace: allowAllCerts.disable()@sys.mjs:51
+destroy()@sys.mjs:201
+deleteSession()@sys.mjs:142
+stop()@sys.mjs:221
+observe()@resource://gre/modules/AsyncShutdown.jsm:560
+ication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 363 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1672947256125	Marionette	INFO	Stopped listening on port 65262
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilezzeoqJ\protections.sqlite
+1673015206426	geckodriver	INFO	Listening on 127.0.0.1:50844
+1673015209421	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50845" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileC1BvRi"
+1673015210190	Marionette	INFO	Marionette enabled
+1673015210195	Marionette	INFO	Listening on port 50855
+Read port: 50855
+WebDriver BiDi listening on ws://127.0.0.1:50845
+1673015210328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileC1BvRi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50845/devtools/browser/ddc804d6-ead7-4588-9ce8-c3aa4841d1e4
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 3204 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673015242229	geckodriver	INFO	Listening on 127.0.0.1:50942
+1673015245228	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50943" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilepciFaP"
+1673015245641	Marionette	INFO	Marionette enabled
+1673015245647	Marionette	INFO	Listening on port 50953
+WebDriver BiDi listening on ws://127.0.0.1:50943
+Read port: 50953
+1673015245980	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilepciFaP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50943/devtools/browser/add7de77-4893-4b3d-92fe-35d98a556949
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 3359 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673015260815	Marionette	INFO	Stopped listening on port 50953
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilepciFaP\protections.sqlite
+1673017750272	geckodriver	INFO	Listening on 127.0.0.1:51974
+1673017753270	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51975" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofiledPjzxA"
+1673017753727	Marionette	INFO	Marionette enabled
+1673017753733	Marionette	INFO	Listening on port 51985
+WebDriver BiDi listening on ws://127.0.0.1:51975
+Read port: 51985
+1673017754031	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofiledPjzxA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51975/devtools/browser/6222dcc7-2742-4900-8b46-9bdfa35a3c3e
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 282 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673017772081	Marionette	INFO	Stopped listening on port 51985
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofiledPjzxA\protections.sqlite
+1673017839031	geckodriver	INFO	Listening on 127.0.0.1:52112
+1673017842032	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52113" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileRcCriZ"
+1673017842440	Marionette	INFO	Marionette enabled
+1673017842446	Marionette	INFO	Listening on port 52123
+WebDriver BiDi listening on ws://127.0.0.1:52113
+Read port: 52123
+1673017842750	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileRcCriZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52113/devtools/browser/735130db-1869-460c-9f14-45b8af776fba
+1673017848064	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 3576 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673017872066	geckodriver	INFO	Listening on 127.0.0.1:52218
+1673017893735	geckodriver	INFO	Listening on 127.0.0.1:52235
+1673017896747	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52236" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileMJflw4"
+1673017897140	Marionette	INFO	Marionette enabled
+1673017897145	Marionette	INFO	Listening on port 52246
+Read port: 52246
+WebDriver BiDi listening on ws://127.0.0.1:52236
+1673017897255	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileMJflw4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52236/devtools/browser/849f5e6b-5582-4d95-a26a-f034a7d55afd
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 3191 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673018069109	geckodriver	INFO	Listening on 127.0.0.1:52493
+1673018072119	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52494" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileeP0u2H"
+1673018072601	Marionette	INFO	Marionette enabled
+1673018072607	Marionette	INFO	Listening on port 52504
+Read port: 52504
+WebDriver BiDi listening on ws://127.0.0.1:52494
+1673018072718	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileeP0u2H\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52494/devtools/browser/6a9a6843-266c-4a03-9284-f3292af94e40
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 4488 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:52618
+1673018174102	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52619" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofiletqA6Sc"
+1673018174575	Marionette	INFO	Marionette enabled
+1673018174581	Marionette	INFO	Listening on port 52630
+Read port: 52630
+WebDriver BiDi listening on ws://127.0.0.1:52619
+1673018174724	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofiletqA6Sc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52619/devtools/browser/89812f35-492d-4a48-8405-2f8eeb565e6f
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 2942 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:52758
+1673018294260	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52759" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileEXPe2N"
+1673018294777	Marionette	INFO	Marionette enabled
+1673018294783	Marionette	INFO	Listening on port 52769
+WebDriver BiDi listening on ws://127.0.0.1:52759
+Read port: 52769
+1673018295064	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileEXPe2N\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52759/devtools/browser/8daf920f-f0e2-473f-bf7a-54cc5865a3c8
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 4718 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673018424564	geckodriver	INFO	Listening on 127.0.0.1:52888
+1673018427578	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52889" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilebPxLoJ"
+1673018428009	Marionette	INFO	Marionette enabled
+1673018428015	Marionette	INFO	Listening on port 52899
+Read port: 52899
+WebDriver BiDi listening on ws://127.0.0.1:52889
+1673018428165	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilebPxLoJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52889/devtools/browser/f6809e49-c9e0-4723-9d88-79e2c483e8a4
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 1100 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673018445493	Marionette	INFO	Stopped listening on port 52899
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\del_p\AppData\Local\Temp\rust_mozprofilebPxLoJ\protections.sqlite
+1673018466114	geckodriver	INFO	Listening on 127.0.0.1:53074
+1673018469164	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53075" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilepW9nur"
+1673018469579	Marionette	INFO	Marionette enabled
+1673018469585	Marionette	INFO	Listening on port 53085
+WebDriver BiDi listening on ws://127.0.0.1:53075
+Read port: 53085
+1673018469907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofilepW9nur\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53075/devtools/browser/40bb6f35-593b-49fe-8ce4-677a90c77344
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 3573 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673018565478	geckodriver	INFO	Listening on 127.0.0.1:53240
+1673018568478	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53241" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile9LqheF"
+1673018568894	Marionette	INFO	Marionette enabled
+1673018568899	Marionette	INFO	Listening on port 53271
+WebDriver BiDi listening on ws://127.0.0.1:53241
+Read port: 53271
+1673018569211	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofile9LqheF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53241/devtools/browser/82528b45-99b7-40fc-b180-4f843814dd1e
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 4285 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673018682677	geckodriver	INFO	Listening on 127.0.0.1:53420
+1673018685685	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53421" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileQWj1mU"
+1673018686158	Marionette	INFO	Marionette enabled
+1673018686164	Marionette	INFO	Listening on port 53443
+Read port: 53443
+WebDriver BiDi listening on ws://127.0.0.1:53421
+1673018686273	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileQWj1mU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53421/devtools/browser/e6f205fd-6070-41e5-a9a0-4d76bfbfc19c
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 2281 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673018841223	geckodriver	INFO	Listening on 127.0.0.1:53640
+1673018844234	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileYuLStc"
+1673018844659	Marionette	INFO	Marionette enabled
+1673018844664	Marionette	INFO	Listening on port 53651
+WebDriver BiDi listening on ws://127.0.0.1:53641
+Read port: 53651
+1673018844974	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileYuLStc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53641/devtools/browser/4a5846c6-126e-4ba8-8cb5-b912fc32d943
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 5874 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673018940860	geckodriver	INFO	Listening on 127.0.0.1:53860
+1673018943881	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53861" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileEzwZEU"
+1673018944286	Marionette	INFO	Marionette enabled
+1673018944291	Marionette	INFO	Listening on port 53871
+Read port: 53871
+WebDriver BiDi listening on ws://127.0.0.1:53861
+1673018944404	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\del_p\\AppData\\Local\\Temp\\rust_mozprofileEzwZEU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53861/devtools/browser/2d7e5de6-c6b6-4fcb-81e2-1dd70e8ed28d
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 7801 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
