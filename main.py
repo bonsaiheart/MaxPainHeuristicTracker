@@ -11,7 +11,7 @@ ticker = input("Which ticker?").upper()
 
 retrieve_mp_data.GetMaxPainData(ticker)
 
-dailyCSVentries = glob.glob(f'dataOutput\\{ticker}_Daily_CSVs\\*.csv')
+dailyCSVentries = glob.glob(f'dataOutput/{ticker}_Daily_CSVs/*.csv')
 
 data = []
 
