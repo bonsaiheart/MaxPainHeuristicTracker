@@ -4,6 +4,7 @@ import pandas as pd
 import operations
 import matplotlib.pyplot as plt
 import retrieve_mp_data
+from pathlib import Path
 
 
 ticker = input("Which ticker?").upper()
@@ -28,7 +29,9 @@ bigframe = bigframe.transpose()
 bigframe = bigframe.reindex(sorted(bigframe.index))
 listofmatchingdates = [pd.to_datetime(c, format='%m/%d/%y').strftime("%Y/%m/%d") for c in bigframe.columns if c in bigframe.index]
 today_datetime = datetime.today().strftime("%Y/%m/%d")
-listofmatchingdates.remove(today_datetime)
+
+if today_datetime in listofmatchingdates:
+    listofmatchingdates.remove(today_datetime)
 
 
 def swap_backslash(i):
@@ -39,18 +42,24 @@ def swap_backslash(i):
 listofmatchingdates_backslash = [swap_backslash(i) for i in listofmatchingdates]
 bigframe.index = pd.to_datetime(bigframe.index, format='%m/%d/%y').strftime("%m/%d/%y")
 bigframe.columns = pd.to_datetime(bigframe.columns, format='%m/%d/%y').strftime("%m/%d/%y")
-spy = operations.RetrieveHistoricalData("SPY")
+tickerhist = operations.RetrieveHistoricalData(f"{ticker}")
 
 
 for a in listofmatchingdates_backslash:
     a = f"{a}"
     b = (datetime.strptime(a, '%Y-%m-%d').strftime("%m/%d/%y"))
-    closingprice = '{:,.2f}'.format(spy.get_closing_price(a))
+    closingprice = '{:,.2f}'.format(tickerhist.get_closing_price(a))
     indexvalue = (bigframe.columns.get_loc(b)) + 1
     columnvalue = (bigframe.index.get_loc(b))
     bigframe.iat[columnvalue, indexvalue] = closingprice
 
-bigframe.to_csv(f"dataoutput/{ticker.upper()}maxpain.csv")
+
+output_dir = Path('dataOutput/')
+
+output_dir.mkdir(parents=True, exist_ok=True)
+
+
+bigframe.to_csv(f"dataoutput/{ticker}maxpain.csv")
 
 bigframe = bigframe.astype(float)
 

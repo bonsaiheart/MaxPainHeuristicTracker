@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
+from pathlib import Path
 
 
 ## options = Options()
@@ -70,6 +71,10 @@ class GetMaxPainData:
         driver.close()
         print(data_dict)
         if error == 0:
+            output_dir = Path(f'dataOutput/{ticker}_Daily_CSVs')
+
+            output_dir.mkdir(parents=True, exist_ok=True)
+
             with open(f"dataOutput/{ticker}_Daily_CSVs/{todayasYYMMDD} {ticker} MaxPain.csv", 'w') as file:
                 writer = csv.DictWriter(file, data_dict.keys())
                 writer.writeheader()
