@@ -28,8 +28,9 @@ class GetMaxPainData:
             print("Market Closed")
             exit()
 
-        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
 
+        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+        driver.implicitly_wait(20)
         driver.get(f'https://maximum-pain.com/options/{ticker}')
         element_dropdown = driver.find_element(By.TAG_NAME, "select")
         all_options = element_dropdown.find_elements(By.TAG_NAME, "option")
@@ -68,7 +69,11 @@ class GetMaxPainData:
                 data_dict = ""
                 today = f"Timeout Error {today}"
                 error = 1
+
         driver.close()
+
+        driver.quit()
+    # .teardown(){}
         print(data_dict)
         if error == 0:
             output_dir = Path(f'dataOutput/{ticker}_Daily_CSVs')
