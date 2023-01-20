@@ -1,7 +1,0 @@
-#tickers to gather/compute
-
-tickers_to_track = ["tsla",
-"roku",
-"spy",
-"chwy",
-"uvxy"]
