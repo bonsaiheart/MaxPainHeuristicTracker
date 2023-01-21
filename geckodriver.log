@@ -9249,3 +9249,36 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 1864 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 5388 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1674239275290	geckodriver	INFO	Listening on 127.0.0.1:55197
+1674239278367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55198" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\natha\\AppData\\Local\\Temp\\rust_mozprofileyRxZt5"
+1674239279060	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1674239279066	Marionette	INFO	Listening on port 55205
+Read port: 55205
+WebDriver BiDi listening on ws://127.0.0.1:55198
+1674239279262	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\natha\\AppData\\Local\\Temp\\rust_mozprofileyRxZt5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55198/devtools/browser/31f87b9e-2308-4e04-b656-0f102eb0e8b2
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1674246992866	Marionette	INFO	Stopped listening on port 55205
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+C:\\Users\\natha\\AppData\\Local\\Temp\\rust_mozprofile998JmC"
+1674239344901	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1674239344905	Marionette	INFO	Listening on port 59818
+WebDriver BiDi listening on ws://127.0.0.1:59811
+Read port: 59818
+1674239345193	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\natha\\AppData\\Local\\Temp\\rust_mozprofile998JmC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59811/devtools/browser/a588658f-fd25-4358-9625-5e55271a1f29
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 3352 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 5947 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 3335 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+JavaScript warning: https://pagead2.googlesyndication.com/bg/JwRg8GnJRbSbwgtubA3x1Twn6jgCPCxSQn9TsX0K1wE.js line 2 > eval line 746 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
