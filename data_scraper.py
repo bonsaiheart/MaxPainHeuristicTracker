@@ -55,7 +55,7 @@ class DataScraper:
         todayinweirdformat = date.today()
         today = pd.to_datetime(todayinweirdformat).strftime("%m-%d-%y")
         todayasYYMMDD = todayinweirdformat.strftime("%Y_%m_%d")
-
+        pd.to_datetime(date.today()).strftime("%Y_%m_%d")
 
 
         for option in all_options:
@@ -96,7 +96,7 @@ class DataScraper:
         if error == 0:
             output_dir = Path(f'dataOutput/{ticker}_Daily_CSVs')
 
-            output_dir.mkdir(parents=True, exist_ok=True)
+            output_dir.mkdir(mode=0o755,parents=True, exist_ok=True)
 
             with open(f"dataOutput/{ticker}_Daily_CSVs/{todayasYYMMDD} {ticker} MaxPain.csv", 'w') as file:
                 writer = csv.DictWriter(file, data_dict.keys())

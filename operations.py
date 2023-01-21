@@ -16,3 +16,4 @@ class RetrieveHistoricalData:
 
         closing_price = (stock_history.at[stock_history.index[0], "Close"])
         return closing_price
+
