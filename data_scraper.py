@@ -89,6 +89,7 @@ class DataScraper:
                 error = 1
                 break
 
+###TODO clean up diff dir problem and move files manually to reflect.
 
 
         # .teardown(){}
@@ -98,7 +99,7 @@ class DataScraper:
 
             output_dir.mkdir(mode=0o755,parents=True, exist_ok=True)
 
-            with open(f"dataOutput/{ticker}_Daily_CSVs/{todayasYYMMDD} {ticker} MaxPain.csv", 'w') as file:
+            with open(f"dataOutput/daily_selenium_scrapedMP/{ticker}_Daily_CSVs/{todayasYYMMDD} {ticker} MaxPain.csv", 'w') as file:
                 writer = csv.DictWriter(file, data_dict.keys())
                 writer.writeheader()
                 writer.writerow(data_dict)

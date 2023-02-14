@@ -1,13 +1,36 @@
-
+import requests
+import json
 import os
 import wget
 from pathlib import Path
 import pandas as pd
 from datetime import date
+import pandas_datareader as pdr
+from datetime import timedelta
 
-today = pd.to_datetime(date.today()).strftime("%Y_%m_%d")
+today = pd.to_datetime(date.today()).strftime("%Y-%m-%d")
+yesterday =pd.to_datetime(date.today()-timedelta(1)).strftime("%Y-%m-%d")
 
 
+AlphaVandtageAPI="G1UUK5RP97UV21X8"
+
+
+#
+# def last_close_contract_value(contract):
+
+def get_last_adj_close(ticker):
+    api_key = AlphaVandtageAPI
+
+    url = f'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={ticker}&apikey={api_key}'
+    response = requests.get(url)
+    data = json.loads(response.text)
+    last_adj_close = float(data['Global Quote']['05. price'])
+    # last_adj_close = 409.06
+    print(f'{ticker} Last Adjusted Close: ${last_adj_close}')
+
+    return last_adj_close
+
+#TODO find out what time the site updates.
 def retrive_oi_data(ticker):
     ticker = ticker.upper()
     output_dir = Path(f"tempdata/{ticker}")
@@ -33,86 +56,113 @@ def write_oi_data_to_csv(ticker):
         infile.truncate()
 
     with open(f"tempdata/{ticker}/{today}_oi_dl.txt", "r+") as infile:
-        txt = infile.read().replace('\t\t','\t')
+        txt2 = infile.read().replace('\t\t','\t')
         infile.seek(0)
-        infile.writelines(txt)
+        infile.writelines(txt2)
         infile.truncate()
 
     oicsv = pd.read_table(f"tempdata/{ticker}/{today}_oi_dl.txt")
     oicsv.drop(oicsv.columns[6], axis=1, inplace=True)
     oicsv.drop(oicsv.columns[8], axis=1, inplace=True)
     oicsv.drop(oicsv.columns[8], axis=1, inplace=True)
-    oicsv.drop(oicsv.columns[0], axis=1, inplace=True)
+    # oicsv.drop(oicsv.columns[0], axis=1, inplace=True)
     dec_as_float = oicsv["Dec"]
     float = dec_as_float/1000
 
     for value in oicsv["Integer"]:
         oicsv["Strike"] = oicsv["Integer"] + float
+    oicsv["TotalOI"] = oicsv['Call'] + oicsv['Put']
     oicsv.drop("Integer", axis=1, inplace=True)
     oicsv.drop("Dec", axis=1, inplace=True)
     oicsv['ExpDate'] = oicsv['Year'].astype(str) + oicsv['Month'].astype(str).str.zfill(2) + oicsv['Day'].astype(str).str.zfill(2)
     oicsv["ExpDate"] = pd.to_datetime(oicsv["ExpDate"], format="%Y%m%d")
+    oicsv["DateGen"] = today
     oicsv.drop(["Year"], axis=1,inplace=True)
     oicsv.drop(["Month"], axis=1,inplace=True)
     oicsv.drop(["Day"], axis=1,inplace=True)
-    oicsv = oicsv.reindex(columns =["ExpDate","Strike","Call","Put"])
-    oicsv.to_csv(f"dataOutput/{ticker}_daily_OI/{ticker}_{today}.csv",index_label="index")
+    oicsv = oicsv.reindex(columns =["ProductSymbol","DateGen","ExpDate","Strike","Call","Put", "TotalOI"])
+    oicsv.to_csv(f"dataOutput/{ticker}_daily_OI/{ticker}_{today}.csv", index_label="index")
+
+### must be ran after 7am or somehting?  ###TODO figure out when and how to sync price and option oi data.  morning? noon?\
+
+def calculate_maximum_pain(ticker):
+
+    oicsv = pd.read_csv(f"dataOutput/{ticker}_daily_OI/{ticker}_{today}.csv")
+    stock_price = get_last_adj_close(ticker)
+    groups = oicsv.groupby('ExpDate')
+    results = []
+    print(stock_price)
+    for exp_date, group in groups:
+        print(exp_date)
+
+        strikes = group['Strike'].unique()
+
+      #pain is ITM puts/calls
+        pain = []
+        allPain = []
+        calls = group.loc[group['Call'] >= 0, ["Strike",'Call']].set_index('Strike').to_dict()
+
+        puts = group.loc[group['Put'] >= 0, ["Strike",'Put']].set_index('Strike').to_dict()
 
 
+        # All_PC_Ratio =
+        # Money_weighted_PC_Ratio =
+        ALL_PC_Ratio = group["Put"].sum() / group['Call'].sum()
 
-def get_highest_oi_PC(ticker):
-    ticker = ticker.upper()
-    df = pd.read_csv(f"dataOutput/{ticker}_daily_OI/{ticker}_{today}.csv",index_col=["index"])
-    print(df)
-    calls_list = []
-    highest_oi_calls_dict = {}
-    puts_list = []
-    highest_oi_puts_dict = {}
+        for strike in strikes:
+            print(strike)
+            Allput = puts.get('Put', {}).get(strike, 0)
 
-    for value in df["Call"]:
-        calls_list.append(value)
-    calls_list.sort(reverse=True)
-    highcall_indexvalue = df[df['Call'] == calls_list[0]].index[0]
-###TODO I think i want a chart taht has STRIKE, then above/below, the top OI.  There fore, I should probalby use lists instead of dicts.
+            Allcall = calls.get('Call', {}).get(strike, 0)
+           ##get only ITM puts/calls
+            if strike > stock_price:
+                calls.get('Call').pop(float(strike))
 
-    for value in df["Put"]:
-        puts_list.append(value)
-    puts_list.sort(reverse=True)
-    highput_indexvalue = df[df['Put'] == puts_list[0]].index[0]
+                # print(calls)
+                # print(stock_price)
+            elif strike < stock_price:
+                puts.get('Put').pop(float(strike))
 
+            #specific call/put OI for the strike
+            call = calls.get('Call', {}).get(strike, 0)
+            put = puts.get('Put', {}).get(strike, 0)
 
+            ##flipped sp and strike below.
+            all_pain_value = (abs(strike - stock_price)) * (Allcall + Allput)
+            allPain.append((strike, all_pain_value))
+            pain_value = (abs(strike - stock_price)) * (call + put)
+            print (call,put,stock_price)
+            pain.append((strike, pain_value))
 
-    for oi in calls_list[:5]:
-        highcall_indexvalue = df[df['Call'] == oi].index[0]
-        strike = df.at[highcall_indexvalue, "Strike"]
-        highest_oi_calls_dict[oi] = strike
+        ITM_PC_Ratio = group["Put"].sum() / group["Call"].sum()
+        ###origninac.
+        # ITM_PC_Ratio = group["Put"].sum() / group["Call"].sum()
 
-    for oi in puts_list[:5]:
-        highput_indexvalue = df[df['Put'] == oi].index[0]
-        strike = df.at[highput_indexvalue, "Strike"]
-        highest_oi_puts_dict[oi] = strike
+        # print(f'ITM put/call ratio : {ticker} - {ITM_PC_Ratio}')
+        max_allPain = max(allPain, key=lambda x: x[1])[0]
+        max_pain = max(pain, key=lambda x: x[1])[0]
+        date_gen = group['DateGen'].unique()[0]
+        top_five_calls = group.loc[group['Call'] > 0].sort_values(by='Call', ascending=False).head(5)
+        top_five_calls_dict = top_five_calls[['Strike', 'Call']].set_index('Strike').to_dict()['Call']
+        highestTotalOI = group.loc[group['TotalOI'] > 0].sort_values(by='TotalOI', ascending=False).head(5)
+        highestTotalOI_dict = highestTotalOI[['Strike', 'TotalOI']].set_index('Strike').to_dict()['TotalOI']
+        top_five_puts = group.loc[group['Put'] > 0].sort_values(by='Put', ascending=False).head(5)
+        top_five_puts_dict = top_five_puts[['Strike', 'Put']].set_index('Strike').to_dict()['Put']
 
+        results.append({
+            'DateGen': date_gen,
+            'ExpDate': exp_date,
+            'ITM Maximum Pain': max_pain,
+            'All Maxpain' : max_allPain,
+            'Top 5 Calls': top_five_calls_dict,
+            'Top 5 Puts': top_five_puts_dict,
+            'highestOIstrike': highestTotalOI_dict,
+            'ITM P/C Ratio' : ITM_PC_Ratio,
+            'All P/C Ratio' : ALL_PC_Ratio
+        })
+    oiDF = pd.DataFrame(results)
+    directory = f"dataOutput/oi_mp_csvs/{ticker}"
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    oiDF.to_csv(f'dataOutput/oi_mp_csvs/{ticker}/{today}_{ticker}.csv')
 
-    print(f"Calls ={highest_oi_calls_dict}")
-    print(f"Puts ={highest_oi_puts_dict}")
-    output_dir = Path(f"dataOutput/{ticker}")
-    output_dir.mkdir(mode=0o755,parents=True, exist_ok=True)
-
-    #TODO make this write a datafrome, discover a suitable data vis. format.
-    for key, value in highest_oi_calls_dict.items():
-        df.loc[key] = value
-        print(highest_oi_calls_dict)
-
-    # with open(f"dataOutput/{ticker}/highest_oi_strikes.txt", "a") as outfile:
-    #     calls_df = pd.DataFrame.from_dict(highest_oi_calls_dict)
-    #     print(calls_df)
-    #     puts_df = pd.DataFrame.from_dict(highest_oi_puts_dict)
-    #     oi_df = pd.puts_df.concat(calls_df)
-    #     outfile.write(oi_df)
-
-
-
-
-
-
-#TODO collect OI data by "date fetched", collect into one file?

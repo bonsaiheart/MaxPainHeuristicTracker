@@ -19,7 +19,7 @@ for ticker in tickerlist.readlines():
     data = []
     ticker = ticker.strip().upper()
     getMP.get_mpdata(ticker)
-    dailyCSVentries = glob.glob(f'dataOutput/{ticker}_Daily_CSVs/*.csv')
+    dailyCSVentries = glob.glob(f'dataOutput/daily_selenium_scrapedMP/{ticker}_Daily_CSVs/*.csv')
 
     for csv in dailyCSVentries:
         df = pd.read_csv(csv)
@@ -41,14 +41,15 @@ for ticker in tickerlist.readlines():
 ## This part is here to ensure I'm not trying to pull closing data from a day in progress.
     if today_datetime in listofmatchingdates:
         listofmatchingdates.remove(today_datetime)
-
+#TODO As it stands, if i miss a day of scraping, close will never be popoulated for the day before.
     listofmatchingdates_backslash = [datetime_operations.swap_backslash(i) for i in listofmatchingdates]
     bigframe.index = pd.to_datetime(bigframe.index, format='%m/%d/%y').strftime("%m/%d/%y")
     bigframe.columns = pd.to_datetime(bigframe.columns, format='%m/%d/%y').strftime("%m/%d/%y")
-    tickerhist = operations.RetrieveHistoricalData(f"{ticker}")
+    tickerhist = operations.RetrieveYFData(f"{ticker}")
 
 
     for a in listofmatchingdates_backslash:
+
         a = f"{a}"
         b = (datetime.strptime(a, '%Y-%m-%d').strftime("%m/%d/%y"))
         closingprice = '{:,.2f}'.format(tickerhist.get_closing_price(a))
