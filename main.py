@@ -3,15 +3,17 @@ import operations as op
 import openinterestapi as oi
 
 
-tickerlist = open("Inputs/tickers_to_track.txt", "r")
+tickerlist = "spy"
+    # open("Inputs/tickers_to_track.txt", "r")
 
-for ticker in tickerlist.readlines():
 
-    ticker = ticker.strip().upper()
 
-    oi.retrive_oi_data(ticker)
-    oi.write_oi_data_to_csv(ticker)
-    oi.calculate_maximum_pain(ticker)
+
+ticker = tickerlist.strip().upper()
+
+oi.retrive_oi_data(ticker)
+oi.write_oi_data_to_csv(ticker)
+oi.calculate_maximum_pain(ticker)
 
 # display OI(5 callOI and 5 PUToi), Max Pain?, previous close date generated?
 #or a dataframe?

@@ -73,6 +73,7 @@ for ticker in tickerlist.readlines():
     plt.xticks(range(len(bigframe.index)), bigframe.index, rotation=90)
     # ticks=range(len(bigframe)),
     plt.legend(title="Date Gen.")
+    plt.show()
     plt.savefig(f"dataOutput/graphs/staggered_mp/{ticker}_sMP_graph")
 
 tickerlist.close()

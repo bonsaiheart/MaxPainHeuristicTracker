@@ -130,10 +130,15 @@ def calculate_maximum_pain(ticker):
             ##flipped sp and strike below.
             all_pain_value = (abs(strike - stock_price)) * (Allcall + Allput)
             allPain.append((strike, all_pain_value))
-            pain_value = (abs(strike - stock_price)) * (call + put)
-            print (call,put,stock_price)
+            ###TODO the error in max pain lies here, not taking the sum of all ITM callOI+PutOI.
+            ### was * (call + put)
+            pain_value = (abs(strike - stock_price)) * (calls.sum() + puts.sum())
+
             pain.append((strike, pain_value))
 
+
+        print(calls)
+        print(puts)
         ITM_PC_Ratio = group["Put"].sum() / group["Call"].sum()
         ###origninac.
         # ITM_PC_Ratio = group["Put"].sum() / group["Call"].sum()
